@@ -1,13 +1,13 @@
-import preloadIMG from "../img/telas/preload.png";
-import blogIMG from "../img/telas/blog.png";
-import apiIMG from "../img/telas/apiclima.png";
-import galeriaIMG from "../img/telas/galeria.png";
-import gameIMG from "../img/telas/game.png";
-import opservicesIMG from "../img/telas/opservices.png";
-import storeIMG from "../img/telas/lojavirtual.png";
-import spajsIMG from "../img/telas/spaJSpuro.png";
-import loginIMG from "../img/telas/login.png";
-import toxibookIMG from "../img/telas/toxibook.png";
+import preloadIMG from "../img/telas/preload.webp";
+import blogIMG from "../img/telas/blog.webp";
+import apiIMG from "../img/telas/apiclima.webp";
+import galeriaIMG from "../img/telas/galeria.webp";
+import gameIMG from "../img/telas/game.webp";
+import opservicesIMG from "../img/telas/opservices.webp";
+import storeIMG from "../img/telas/lojavirtual.webp";
+import spajsIMG from "../img/telas/spaJSpuro.webp";
+import loginIMG from "../img/telas/login.webp";
+import toxibookIMG from "../img/telas/toxibook.webp";
 
 export default {
   preloadIMG,

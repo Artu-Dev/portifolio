@@ -97,16 +97,16 @@ const Projects = () => {
           </a>
         </div>
         <div className="project_tech">
-          {projeto.tech.map((item) => (
-            <button
+          {projeto.tech.map((item, index) => (
+            <i
               href=""
-              key={item.classe}
+              key={index}
               className={item.classe}
               onClick={(e) =>
                 handleFilter(item.classe, getElementByClass(item.classe))
               }>
               {item.icone}
-            </button>
+            </i>
           ))}
         </div>
       </article>
@@ -121,6 +121,7 @@ const Projects = () => {
         {filters.map((filter, index) => (
           <i
             className={filter.name}
+            name={filter.name}
             key={index}
             ref={filter.ref}
             onClick={() => handleFilter(filter.name, filter.ref)}

@@ -161,7 +161,7 @@
   gap: .2rem;
 }
 
-.project_tech button,
+.project_tech i,
 .projects_filter i {
   cursor: pointer;
   font-size: 1.7rem;
@@ -174,12 +174,12 @@
   opacity: .5;
 }
 
-.project_tech button:hover,
+.project_tech i:hover,
 .projects_filter i:hover {
   filter: brightness(80%);
 }
 
-.project_tech button:active {
+.project_tech i:active {
   scale: .9;
 }
 
