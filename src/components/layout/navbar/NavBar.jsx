@@ -4,27 +4,36 @@ import "./NavBar.css";
 
 const NavBar = () => {
   const navRef = useRef();
+  const svgRef = useRef();
 
-  const showItems = () => {
+  const toggleNavBar = () => {
     navRef.current.classList.toggle('activated')
+    svgRef.current.classList.toggle('activated')
+  }
+  const removeNavBar = () => {
+    navRef.current.classList.remove('activated')
+    svgRef.current.classList.remove('activated')
   }
 
   return (
     <nav>
-      <div ref={navRef} className="nav">
+      <div className="nav">
         <div>
           <h1>ArtDv</h1>  
         </div>
-        <RiMenu5Line onClick={showItems} />
-        <div className="menu">
-          <ul>
-            <li>Home</li>
-            <li>Skills</li>
-            <li>Projetos</li>
-            <li>Contato</li>
-          </ul>
+          <div ref={svgRef} onClick={toggleNavBar} className="svgIcon-container">
+            <RiMenu5Line className="barOpen"/>
+            <RiCloseLine className="barclose"/>
+          </div>
+          <div ref={navRef} onMouseLeave={removeNavBar} className="menu">
+            <ul>
+              <li><a href="#home" onClick={removeNavBar}>Home</a></li>
+              <li><a href="#skills" onClick={removeNavBar}>Skills</a></li>
+              <li><a href="#projects" onClick={removeNavBar}>Projetos</a></li>
+              <li><a href="#contact" onClick={removeNavBar}>Contato</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
     </nav>
   )
 }

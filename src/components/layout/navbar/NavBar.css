@@ -22,14 +22,20 @@ nav {
   font-size: 2em;
 }
 
-.nav svg {
+.nav .svgIcon-container {
   font-size: 2em;
   transition: all ease .3s;
+  height: 2rem;
+  cursor: pointer;
 }
 
-.nav svg:hover {
+.nav .svgIcon-container:hover {
   color: #00ADB5;
   rotate: 180deg;
+}
+
+.svgIcon-container .barclose {
+  display: none;
 }
 
 .menu {
@@ -37,6 +43,8 @@ nav {
   position: absolute;
   overflow: hidden;
   height: 0;
+  z-index: -1;
+  opacity: 0;
   right: 1rem;
   top: -2.5rem;
   padding: 1rem 4rem;
@@ -49,14 +57,16 @@ nav {
   list-style: none;
 }
 
-.menu li {
+.menu li a{
   font-size: 1.4em;
   line-height: 3rem;
   transition: all ease .3s;
+  text-decoration: none;
+  color: #Eeeeee;
 }
 
 
-.menu li:hover {
+.menu li a:hover {
   color: #393E46;
   cursor: pointer;
 }
@@ -66,9 +76,18 @@ nav {
   rotate: 180deg;
 } 
 
-.activated .menu {
+.activated .barclose {
+  display: block;
+}
+
+.activated .barOpen {
+  display: none;
+}
+
+.activated {
   top: 4rem;
   height: 14rem;
+  opacity: 1;
 }
 
 
@@ -87,6 +106,7 @@ nav {
     width: 80%;
     background: none;
     box-shadow: none;
+    opacity: 1;
   }
 
   .menu ul {
@@ -97,7 +117,7 @@ nav {
     gap: 1.5rem;
   }
   
-  .menu li:hover {
+  .menu li a:hover {
     color: #00ADB5;
   }
 }

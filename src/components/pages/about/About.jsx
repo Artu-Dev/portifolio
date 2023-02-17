@@ -6,7 +6,7 @@ import "../../layout/skillsCard/SkillsCard.css"
 
 const About = () => {
   return (
-    <section className="about-container">
+    <section className="about-container" id="home">
         <div className="circleBG"></div>
         <div className="circleBG2"></div>
         <div className="about-text">
