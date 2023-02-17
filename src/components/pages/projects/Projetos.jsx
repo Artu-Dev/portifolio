@@ -7,7 +7,7 @@ const Projetos = [
   {
     nome: "Preload",
     img: images.preloadIMG,
-    desc: "Projeto de rede social",
+    desc: "Projeto que utiliza a técnica de preload para carregar o conteúdo somente quando estiver pronto, Com um layout que simula um feed de uma rede social, As imagens são carregadas apenas quando estão na área visível da tela para uma experiência mais rápida e fluída.",
     tech: [{ classe: "JavaScript", icone: <IoLogoJavascript />}],
     link: "https://artu-dev.github.io/testes/PRELOAD/",
     repo: "https://github.com/Artu-Dev/testes/tree/main/PRELOAD",
