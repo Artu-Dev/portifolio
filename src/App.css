@@ -3,5 +3,8 @@ body {
   background: #222831;
   color: #EEEEEE;
   overflow-x: hidden;
+}
+
+html {
   scroll-behavior: smooth;
 }
