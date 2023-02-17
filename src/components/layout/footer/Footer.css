@@ -1,0 +1,90 @@
+footer {
+  background: black;
+  height: 50vh;
+  width: 100%;
+  padding: 1rem .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+footer > h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem 1rem ;
+  font-size: 1rem;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #777777;
+  font-weight: bold;
+}
+
+.contact a svg {
+  margin-right: .5rem;
+}
+
+.contact span {
+  color: #eeeeee;
+  font-weight: normal;
+}
+
+.phone i,
+.email i,
+.linkedin i,
+.github i {
+  color: #11c246;
+  background: #eeeeee;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: .5rem 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: .5rem;
+  font-size: 1.4rem;
+}
+
+.phone i svg,
+.email i svg,
+.linkedin i svg,
+.github i svg {
+  position: relative;
+  left: 4px;
+}
+
+.email i{
+  color: #ee4436;
+}
+
+.linkedin i {
+  color: #0a66c2;
+}
+
+.github i {
+  color: #161b22;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    gap: 4rem;
+    justify-content: center;
+  }
+  footer h1 {
+    font-size: 4rem;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 900px;
+    font-size: 1.5rem;
+  }
+}

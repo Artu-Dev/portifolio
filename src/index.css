@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&family=Unbounded&display=swap');
+/* font-family: 'Unbounded', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+::selection {
+  background: #019ea6;
+  color: #eeeeee;
+}
+
+*::-webkit-scrollbar {
+  width: 10px; 
+}
+
+*::-webkit-scrollbar-track {
+  background: #eeeeee; 
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #019ea6;  
+  border-radius: 20px;
+}

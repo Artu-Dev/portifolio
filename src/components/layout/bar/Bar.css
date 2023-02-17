@@ -1,0 +1,7 @@
+.bar {
+  height: .25rem;
+  width: 100%;
+  border-radius: 2rem;
+  background: linear-gradient(90deg, #006db5, #00a0b5);
+  border: none;
+}

@@ -1,0 +1,134 @@
+.main_title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card_container a {
+  text-decoration: none;
+}
+
+.Skillcard_container {
+  background: #393E46;
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+  min-height: 9rem;
+  border-style: dashed;
+  border-width: 2px;
+  transition: all .3s ease;
+  box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.Skillcard_container:hover {
+  background: #4f5661;
+  border-style: solid;
+  scale: 1.02;
+}
+
+.Skillcard_container div {
+  padding: 1rem .5rem;
+}
+
+.Skillcard_container h1 {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+  text-align: center;
+  color: #EEEEEE;
+}
+
+.Skillcard_container p {
+  font-size: .8rem;
+  line-height: 1.1rem;
+  color: #cfcfcf;
+  max-width: 100%;
+
+}
+
+.HTML {
+  border-color: #E34C26;
+}
+.HTML svg {
+  color: #E34C26;
+  filter: drop-shadow(0 0 10px #e34c263b);
+}
+
+.CSS {
+  border-color: #3C99DC;
+}
+.CSS svg {
+  color: #3C99DC;
+  filter: drop-shadow(0 0 10px #3c99dc3d);
+}
+
+.JavaScript {
+  border-color: #F0DB4F;
+}
+.JavaScript svg {
+  color: #F0DB4F;
+  filter: drop-shadow(0 0 10px #f0da4f3d);
+}
+
+.ReactJS {
+  border-color: #61DBFB;
+}
+.ReactJS svg {
+  color: #61DBFB;
+  filter: drop-shadow(0 0 10px #61dcfb52);
+}
+
+.SASS {
+  border-color: #CD6799;
+}
+.SASS svg {
+  color: #CD6799;
+  filter: drop-shadow(0 0 10px #cd679841);
+}
+
+.icon {
+  display: flex;
+  font-size: 4rem;
+  padding: .8rem;
+  animation: pulse 3s infinite;
+}
+
+.icon:hover {
+  filter: brightness(90%);
+}
+
+@keyframes pulse {
+  0%{scale: 1;}
+  50%{scale: 1.1;}
+  100%{scale: 1;}
+}
+
+@media only screen and (min-width: 768px) {
+  .Skillcard_container h1 {
+    font-size: 1.5rem;
+  }
+  .Skillcard_container p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+  .card_container {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

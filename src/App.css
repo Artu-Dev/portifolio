@@ -1,0 +1,7 @@
+body {
+  position: relative;
+  background: #222831;
+  color: #EEEEEE;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,180 @@
+.about-container {
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleBG {
+  background: linear-gradient(90deg, #003fb5,  #00ADB5);
+  height: 50rem;
+  width: 20rem;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -30%;
+  right: -50%;
+  border-radius: 20rem;
+  margin-left: -100px;
+  z-index: -1;
+  scale: .7;
+}
+
+.circleBG2 {
+  background: linear-gradient(45deg, #003fb5,  #00ADB5);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  left: -10vw;
+  bottom: -15vh;
+  scale: 1.5;
+  display: none;
+}
+
+@media only screen and (min-width: 450px) {
+  .circleBG {
+    left: 80%;
+    top: -50%;
+    scale: 1;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .circleBG2 {
+    display: block;
+  }
+}
+
+.about-text {
+  text-align: center;
+  padding: 0 1rem;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.219);
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #dfdede;
+  margin-bottom: .5rem;
+}
+
+.about-text h1 a {
+  color: #b53147;
+  font-weight: bolder;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.about-text h1 a::after {
+  content: "";
+  height: 4rem;
+  width: 4rem;
+  background: #eeeeEE;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  z-index: -1;
+  transition: ease .3s;
+  rotate: 35deg;
+}
+
+.about-text h1 a:hover::after {
+  rotate: -135deg;
+} 
+
+.about-tech {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-tech a svg {
+  text-shadow: 0 0 3px black;
+}
+
+.about-buttons {
+  padding: .5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.btnContact {
+  background-color: #eeeeEE;
+  border-radius: 4px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#a5a5a5 0 -3px 0 inset;
+  color: #222831;
+  display: inline-block;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  transition: ease .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.btnContact:hover {
+  transform: translateY(-2px);
+}
+
+.btnContact:active {
+  box-shadow: #a5a5a5 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.btnDownload {
+  text-decoration: none;
+  color: #eeeeEE;
+  transition: ease .3s;
+  margin-top: .5rem;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.btnDownload svg {
+  position: relative;
+  top: 3px;
+}
+
+.btnDownload:hover {
+  color: #08e251;
+}
+
+.btnDownload:active {
+  text-shadow: 0 0 10px #08e251;
+  font-size: .9rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-text h1 {
+    font-size: 5rem;
+  }
+  .about-text h1 a::after {
+    height: 6rem;
+    width: 6rem;
+  }
+  .about-text h2 {
+    font-size: 2rem;
+  }
+  .about-tech{
+    font-size: 2rem;
+  }
+  .btnContact {
+    font-size: 1.5rem;
+  }
+  .circleBG {
+    scale: 1.2;
+  }
+}

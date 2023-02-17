@@ -1,0 +1,42 @@
+#about {
+  height: 100%;
+  padding: 5rem 1rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background: #EEEEEE;
+  color: #222831;
+  box-shadow: inset 0 0 10px #00000048;
+  gap: 1rem;
+}
+
+#about h1 {
+  font-size: 2.5rem;
+}
+
+#about p {
+  max-width: 700px;
+  color: #393e46;
+  line-height: 1.6rem;
+  margin: 0 auto;
+}
+
+#about p:last-child {
+  margin: .5rem auto;
+}
+
+.about_image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 850px) {
+  #about h1 {
+    font-size: 3rem;
+  }
+  #about p {
+    font-size: 1.2rem;
+  }
+}
