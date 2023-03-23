@@ -8,6 +8,7 @@ import storeIMG from "../img/telas/lojavirtual.webp";
 import spajsIMG from "../img/telas/spaJSpuro.webp";
 import loginIMG from "../img/telas/login.webp";
 import toxibookIMG from "../img/telas/toxibook.webp";
+import chernoChatIMG from "../img/telas/chernochat.webp";
 
 export default {
   preloadIMG,
@@ -20,5 +21,6 @@ export default {
   spajsIMG,
   loginIMG,
   toxibookIMG,
+  chernoChatIMG,
 };
 

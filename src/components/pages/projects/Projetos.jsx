@@ -5,6 +5,17 @@ import { IoLogoJavascript } from "react-icons/io5";
 
 const Projetos = [
   {
+    nome: "ChernoChat",
+    img: images.chernoChatIMG,
+    desc: "ChernoChat é um site de chat anônimo desenvolvido com tecnologias modernas como socket.io e node.js, os usuários podem entrar em uma sala geral de bate-papo e conversar com outras pessoas sem precisar se registrar, apenas fornecer um Apelido.",
+    tech: [
+      { classe: "JavaScript", icone: <IoLogoJavascript />},
+      { classe: "CSS", icone: <DiCss3 /> },
+    ],
+    link: "https://chernochat.glitch.me/",
+    repo: "https://github.com/Artu-Dev/Chernochat",
+  },
+  {
     nome: "Preload",
     img: images.preloadIMG,
     desc: "Projeto que utiliza a técnica de preload para carregar o conteúdo somente quando estiver pronto, Com um layout que simula um feed de uma rede social, As imagens são carregadas apenas quando estão na área visível da tela para uma experiência mais rápida e fluída.",
