@@ -48,7 +48,6 @@ const Projetos = [
     desc: "Loja virtual de Cadeiras e sofas, com sistema de carrinho e localStorage.",
     tech: [
       { classe: "HTML", icone: <DiHtml5 /> },
-      { classe: "CSS", icone: <DiCss3 /> },
       { classe: "JavaScript", icone: <IoLogoJavascript /> },
     ],
     link: "https://artu-dev.github.io/Cadradostore/",
