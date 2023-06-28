@@ -24,6 +24,8 @@
   align-items: center;
   border-radius: .5rem;
   min-height: 9rem;
+  max-height: 16rem;
+  height: 100%;
   border-style: dashed;
   border-width: 2px;
   transition: all .3s ease;
@@ -52,7 +54,8 @@
   line-height: 1.1rem;
   color: #cfcfcf;
   max-width: 100%;
-
+  max-height: 10rem;
+  overflow-y: auto;
 }
 
 .HTML {
@@ -85,6 +88,14 @@
 .ReactJS svg {
   color: #61DBFB;
   filter: drop-shadow(0 0 10px #61dcfb52);
+}
+
+.NodeJs {
+  border-color: #3c873a;
+}
+.NodeJs svg {
+  color: #3c873a;
+  filter: drop-shadow(0 0 10px #3c873a52);
 }
 
 .SASS {

@@ -1,6 +1,6 @@
 import "./About.css";
 import { HiDownload } from "react-icons/hi";
-import { DiSass, DiHtml5, DiCss3, DiReact } from "react-icons/di";
+import { DiSass, DiHtml5, DiCss3, DiReact, DiNodejsSmall } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5"
 import "../../layout/skillsCard/SkillsCard.css"
 
@@ -18,6 +18,7 @@ const About = () => {
             <a href="#skills" className="JavaScript"><IoLogoJavascript/></a>
             <a href="#skills" className="SASS"><DiSass/></a>
             <a href="#skills" className="ReactJS"><DiReact/></a>
+            <a href="#skills" className="NodeJs"><DiNodejsSmall/></a>
           </div>
         </div>
         <div className="about-buttons">

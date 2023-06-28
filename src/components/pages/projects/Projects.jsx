@@ -1,7 +1,7 @@
 import "./Projects.css";
 import "../../layout/skillsCard/SkillsCard.css";
 
-import { DiSass, DiHtml5, DiCss3, DiReact, DiJavascript } from "react-icons/di";
+import { DiSass, DiHtml5, DiCss3, DiReact, DiJavascript, DiNodejsSmall } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
@@ -28,6 +28,16 @@ const Projects = () => {
       name: "JavaScript",
       ref: useRef(),
       icon: <DiJavascript/>,
+    },
+    {
+      name: "ReactJS",
+      ref: useRef(),
+      icon: <DiReact/>,
+    },
+    {
+      name: "NodeJs",
+      ref: useRef(),
+      icon: <DiNodejsSmall/>,
     },
     {
       name: "SASS",
@@ -80,7 +90,7 @@ const Projects = () => {
       <article className="projectCard_container" key={projeto.nome}>
         <div
           className="projectCard_img"
-          style={{ backgroundImage: `url(${projeto.img})` }}
+          style={{ backgroundImage: `url(${import.meta.env.VITE_APIFLASH_SECRET}&url=${projeto.link})` }}
         ></div>
         <div className="project_title">
           <h1>{projeto.nome}</h1>

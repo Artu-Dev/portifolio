@@ -1,4 +1,4 @@
-import { DiSass, DiHtml5, DiCss3, DiReact} from "react-icons/di";
+import { DiSass, DiHtml5, DiCss3, DiReact, DiNodejsSmall} from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5"
 import "./SkillsCard.css";
 
@@ -20,6 +20,11 @@ const SkillsCard = () => {
     {name: "SASS",
       desc: "Com meu conhecimento em SASS, posso criar estilos escaláveis e reutilizáveis para sites e aplicações web. Utilizo variáveis, mixins e funções para escrever códigos CSS mais limpos e organizados, aumentando a eficiência no desenvolvimento de projetos.", 
       img: <DiSass/>},
+      {
+        name: "NodeJs",
+        desc: "Tenho conhecimentos básicos em Node.js, o que me permite desenvolver aplicações do lado do servidor. Consigo criar operações CRUD utilizando o MongoDB como banco de dados. possuo conhecimentos básicos em JWT (JSON Web Tokens) para autenticação e autorização em aplicações. Estou em constante aprendizado, buscando aprimorar minhas habilidades em Node.js.",
+        img: <DiNodejsSmall/>
+      }
   ];
 
   return (

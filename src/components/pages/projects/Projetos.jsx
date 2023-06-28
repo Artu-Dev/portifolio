@@ -1,15 +1,28 @@
 import images from "../../../assets/images.jsx";
 
-import { DiSass, DiHtml5, DiCss3, DiReact } from "react-icons/di";
+import { DiSass, DiHtml5, DiCss3, DiReact, DiNodejsSmall } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5";
 
 const Projetos = [
+  {
+    nome: "JanKenCards",
+    img: images.chernoChatIMG,
+    desc: "JanKenCards é um jogo de de pedra papel tesoura utilizando cartas, foi desenvolvido utiliando Socket.io, React e backend em Node.js",
+    tech: [
+      { classe: "JavaScript", icone: <IoLogoJavascript />},
+      { classe: "ReactJS", icone: <DiReact /> },
+      { classe: "NodeJs", icone: <DiNodejsSmall /> },
+    ],
+    link: "https://jankencards.vercel.app/",
+    repo: "https://github.com/Artu-Dev/rps-front",
+  },
   {
     nome: "ChernoChat",
     img: images.chernoChatIMG,
     desc: "ChernoChat é um site de chat anônimo desenvolvido com tecnologias modernas como socket.io e node.js, os usuários podem entrar em uma sala geral de bate-papo e conversar com outras pessoas sem precisar se registrar, apenas fornecer um Apelido.",
     tech: [
       { classe: "JavaScript", icone: <IoLogoJavascript />},
+      { classe: "NodeJs", icone: <DiNodejsSmall /> },
       { classe: "CSS", icone: <DiCss3 /> },
     ],
     link: "https://chernochat.glitch.me/",
