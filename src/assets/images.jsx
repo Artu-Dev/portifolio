@@ -10,6 +10,7 @@ import loginIMG from "../img/telas/login.webp";
 import toxibookIMG from "../img/telas/toxibook.webp";
 import chernoChatIMG from "../img/telas/chernochat.webp";
 import login2IMG from "../img/telas/login2.webp";
+import jankencardsIMG from "../img/telas/jankencards.webp";
 
 export default {
   preloadIMG,
@@ -23,6 +24,7 @@ export default {
   loginIMG,
   toxibookIMG,
   chernoChatIMG,
-  login2IMG
+  login2IMG,
+  jankencardsIMG
 };
 

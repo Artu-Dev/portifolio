@@ -27,7 +27,7 @@ const Projetos = [
   },
   {
     nome: "JanKenCards",
-    img: images.chernoChatIMG,
+    img: images.jankencardsIMG,
     desc: "JanKenCards é um jogo de de pedra papel tesoura utilizando cartas, foi desenvolvido utiliando Socket.io, React e backend em Node.js",
     tech: [
       { classe: "JavaScript", icone: <IoLogoJavascript />},
