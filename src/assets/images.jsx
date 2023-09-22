@@ -9,6 +9,7 @@ import spajsIMG from "../img/telas/spaJSpuro.webp";
 import loginIMG from "../img/telas/login.webp";
 import toxibookIMG from "../img/telas/toxibook.webp";
 import chernoChatIMG from "../img/telas/chernochat.webp";
+import login2IMG from "../img/telas/login2.webp";
 
 export default {
   preloadIMG,
@@ -22,5 +23,6 @@ export default {
   loginIMG,
   toxibookIMG,
   chernoChatIMG,
+  login2IMG
 };
 

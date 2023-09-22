@@ -5,6 +5,27 @@ import { IoLogoJavascript } from "react-icons/io5";
 
 const Projetos = [
   {
+    nome: "Toxibook (FRONT)",
+    img: images.toxibookIMG,
+    desc: "Toxibook é uma rede social inspirada no Twitter, baseada em MERN stack (MongoDB, Express, React e Node.js). Projeto feito utilizando varias bibliotecas e tecnologias",
+    tech: [
+      { classe: "ReactJS", icone: <DiReact />},
+      { classe: "CSS", icone: <DiCss3 />}
+    ],
+    link: "https://toxibook.vercel.app/",
+    repo: "https://github.com/Artu-Dev/ToxibookFRONT",
+  },
+  {
+    nome: "Toxibook (BACK)",
+    img: images.toxibookIMG,
+    desc: "Componente de backend da rede social Toxibook, desenvolvido com Node.js. Responsável pelo processamento de dados e interações com o banco de dados. ",
+    tech: [
+      { classe: "NodeJs", icone: <DiNodejsSmall />},
+    ],
+    link: null,
+    repo: "https://github.com/Artu-Dev/ToxibookBACK",
+  },
+  {
     nome: "JanKenCards",
     img: images.chernoChatIMG,
     desc: "JanKenCards é um jogo de de pedra papel tesoura utilizando cartas, foi desenvolvido utiliando Socket.io, React e backend em Node.js",
@@ -28,14 +49,6 @@ const Projetos = [
     link: "https://chernochat.glitch.me/",
     repo: "https://github.com/Artu-Dev/Chernochat",
   },
-  // {
-  //   nome: "Preload",
-  //   img: images.preloadIMG,
-  //   desc: "Projeto que utiliza a técnica de preload para carregar o conteúdo somente quando estiver pronto, Com um layout que simula um feed de uma rede social, As imagens são carregadas apenas quando estão na área visível da tela para uma experiência mais rápida e fluída.",
-  //   tech: [{ classe: "JavaScript", icone: <IoLogoJavascript />}],
-  //   link: "https://artu-dev.github.io/testes/PRELOAD/",
-  //   repo: "https://github.com/Artu-Dev/testes/tree/main/PRELOAD",
-  // },
   // {
   //   nome: "OpServices Dashboard Clone",
   //   img: images.opservicesIMG,
@@ -112,17 +125,17 @@ const Projetos = [
   //   link: "https://artu-dev.github.io/testes/galeria/",
   //   repo: "https://github.com/Artu-Dev/testes/tree/main/galeria",
   // },
-  {
-    nome: "Toxibook",
-    img: images.toxibookIMG,
-    desc: "A tela de login responsiva de uma rede social fictícia. Foi meu primeiro projeto construído com HTML e CSS.",
-    tech: [
-      { classe: "HTML", icone: <DiHtml5 /> },
-      { classe: "CSS", icone: <DiCss3 /> },
-    ],
-    link: "https://artu-dev.github.io/Toxibook/",
-    repo: "https://github.com/Artu-Dev/Toxibook",
-  },
+  // {
+  //   nome: "Toxibook",
+  //   img: images.login2IMG,
+  //   desc: "A tela de login responsiva de uma rede social fictícia. Foi meu primeiro projeto construído com HTML e CSS.",
+  //   tech: [
+  //     { classe: "HTML", icone: <DiHtml5 /> },
+  //     { classe: "CSS", icone: <DiCss3 /> },
+  //   ],
+  //   link: "https://artu-dev.github.io/Toxibook/",
+  //   repo: "https://github.com/Artu-Dev/Toxibook",
+  // },
 ];
 
 export default Projetos
