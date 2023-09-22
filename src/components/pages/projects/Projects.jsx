@@ -90,7 +90,8 @@ const Projects = () => {
       <article className="projectCard_container" key={projeto.nome}>
         <div
           className="projectCard_img"
-          style={{ backgroundImage: `url(${import.meta.env.VITE_APIFLASH_SECRET}&url=${projeto.link})` }}
+          // style={{ backgroundImage: `url(${import.meta.env.VITE_APIFLASH_SECRET}&url=${projeto.link})` }}
+          style={{ backgroundImage: `url(${projeto.img})` }}
         ></div>
         <div className="project_title">
           <h1>{projeto.nome}</h1>
