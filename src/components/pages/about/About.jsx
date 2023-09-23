@@ -3,6 +3,7 @@ import { HiDownload } from "react-icons/hi";
 import { DiSass, DiHtml5, DiCss3, DiReact, DiNodejsSmall } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5"
 import "../../layout/skillsCard/SkillsCard.css"
+import CV from "../../../assets/curriculo.pdf";
 
 const About = () => {
   return (
@@ -23,7 +24,7 @@ const About = () => {
         </div>
         <div className="about-buttons">
           <a className="btnContact" href="#contact">Trabalhe comigo!</a>
-          <a className="btnDownload" href="#">Download CV <HiDownload/> </a>
+          <a className="btnDownload" href={CV} download={true}>Download CV <HiDownload/> </a>
         </div>
     </section>
   )
