@@ -44,7 +44,7 @@ const Projetos = [
       { classe: "NodeJs", icone: <DiNodejsSmall /> },
     ],
     link: null,
-    repo: "https://github.com/Artu-Dev/rps-front",
+    repo: "https://github.com/Artu-Dev/JanKenCards-BACK",
   },
   {
     nome: "ChernoChat",
