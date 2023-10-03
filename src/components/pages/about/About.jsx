@@ -12,7 +12,7 @@ const About = () => {
         <div className="circleBG2"></div>
         <div className="about-text">
           <h1>Meu Nome é <a href="#about">Artur.</a></h1>
-          <h2>Sou um Programador <span>front-end Junior</span></h2>
+          <h2>Sou um Programador <span>front-end</span></h2>
           <div className="about-tech"> 
             <a href="#skills" className="HTML"><DiHtml5/></a>
             <a href="#skills" className="CSS"><DiCss3/></a>
