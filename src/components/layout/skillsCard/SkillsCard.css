@@ -60,50 +60,59 @@
 
 .HTML {
   border-color: #E34C26;
+  color: #E34C26;
 }
 .HTML svg {
-  color: #E34C26;
   filter: drop-shadow(0 0 10px #e34c263b);
 }
 
 .CSS {
   border-color: #3C99DC;
+  color: #3C99DC;
 }
 .CSS svg {
-  color: #3C99DC;
   filter: drop-shadow(0 0 10px #3c99dc3d);
 }
 
 .JavaScript {
   border-color: #F0DB4F;
+  color: #F0DB4F;
 }
 .JavaScript svg {
-  color: #F0DB4F;
   filter: drop-shadow(0 0 10px #f0da4f3d);
 }
 
 .ReactJS {
   border-color: #61DBFB;
+  color: #61DBFB;
 }
 .ReactJS svg {
-  color: #61DBFB;
   filter: drop-shadow(0 0 10px #61dcfb52);
 }
 
 .NodeJs {
   border-color: #3c873a;
+  color: #3c873a;
 }
 .NodeJs svg {
-  color: #3c873a;
   filter: drop-shadow(0 0 10px #3c873a52);
 }
 
 .SASS {
   border-color: #CD6799;
+  color: #CD6799;
 }
 .SASS svg {
-  color: #CD6799;
   filter: drop-shadow(0 0 10px #cd679841);
+}
+
+.TypeScript {
+  border-color: #3178c6;
+  color: #3178c6;
+}
+.TypeScript svg {
+  font-size: .9em;
+  filter: drop-shadow(0 0 10px #3178c641);
 }
 
 .icon {

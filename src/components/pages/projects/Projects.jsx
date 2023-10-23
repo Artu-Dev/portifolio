@@ -6,36 +6,10 @@ import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
 
 import Projetos from "./Projetos";
+import { skills } from "../../Skills/Skills";
 
 const Projects = () => {
   const [selected, setSelected] = useState(null);
-
-  const filters = [
-    {
-      name: "HTML",
-      icon: <DiHtml5 />,
-    },
-    {
-      name: "CSS",
-      icon: <DiCss3/>,
-    },
-    {
-      name: "JavaScript",
-      icon: <DiJavascript/>,
-    },
-    {
-      name: "ReactJS",
-      icon: <DiReact/>,
-    },
-    {
-      name: "NodeJs",
-      icon: <DiNodejsSmall/>,
-    },
-    // {
-    //   name: "SASS",
-    //   icon: <DiSass/>,
-    // },
-  ]
 
   function handleClickImage(projeto) {
     if(projeto.link) window.open(projeto.link, "_blank");
@@ -43,7 +17,7 @@ const Projects = () => {
   }
 
   function PrintProjectCard(projeto) {
-    if(!projeto.tech.some(e => e.classe === selected) && selected) return
+    if(!projeto.tech.some(e => e.name === selected) && selected) return
     return (
       <article className="projectCard_container" key={projeto.nome}>
         <div
@@ -72,9 +46,9 @@ const Projects = () => {
             <i
               href=""
               key={index}
-              className={`${item.classe} ${item.classe === selected ? "selected" : ""}`}
-              onClick={(e) => setSelected(item.classe)}>
-              {item.icone}
+              className={`${item.name} ${item.name === selected ? "selected" : ""}`}
+              onClick={() => handleClickIcon(item.name)}>
+              {item.icon}
             </i>
           ))}
         </div>
@@ -82,17 +56,25 @@ const Projects = () => {
     );
   }
 
+  function handleClickIcon(name) {
+    if(selected === name) {
+      setSelected(null)
+      return
+    }
+    setSelected(name)
+  }
+
   return (
     <div id="projetos" className="projects">
       <h1>Projetos</h1>
 
       <div className="projects_filter">
-        {filters.map((filter, index) => (
+        {Object.values(skills).map((filter, index) => (
           <i
             className={`${filter.name} ${filter.name === selected ? "selected" : ""}`}
             name={filter.name}
             key={index}
-            onClick={() => setSelected(filter.name)}
+            onClick={() => handleClickIcon(filter.name)}
           >
             {filter.icon}
           </i>
