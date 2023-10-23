@@ -125,14 +125,14 @@ const Projetos = [
     link: "https://artu-dev.github.io/Pagina-de-Cadastro/",
     repo: "https://github.com/Artu-Dev/Pagina-de-Cadastro",
   },
-  {
-    nome: "Galeria SASS",
-    img: images.galeriaIMG,
-    desc: "Galeria de fotos simples, estilisada em SASS",
-    tech: [skills.sass],
-    link: "https://artu-dev.github.io/testes/galeria/",
-    repo: "https://github.com/Artu-Dev/testes/tree/main/galeria",
-  },
+  // {
+  //   nome: "Galeria SASS",
+  //   img: images.galeriaIMG,
+  //   desc: "Galeria de fotos simples, estilisada em SASS",
+  //   tech: [skills.sass],
+  //   link: "https://artu-dev.github.io/testes/galeria/",
+  //   repo: "https://github.com/Artu-Dev/testes/tree/main/galeria",
+  // },
 ];
 
 export default Projetos
