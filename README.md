@@ -18,27 +18,6 @@ Para acessar o portfólio basta clicar [aqui](https://arturdev.netlify.app/).
 - React-Icons
 - CSS
 
-## Como rodar o projeto
-
-Para rodar o projeto em sua máquina, siga os passos abaixo:
-
-1. Certifique-se de ter o Node.js instalado em sua máquina.
-2. Clone este repositório em sua máquina.
-3. Na raiz do projeto, execute o comando `npm install` para instalar as dependências.
-4. Após a instalação, execute o comando `npm run dev` para rodar o projeto localmente.
-5. Acesse `http://localhost:5173` em seu navegador para visualizar o portfólio.
-
-## Estrutura do projeto
-
-- `src/components`: contém os componentes utilizados no projeto.
-- `/src/components/pages/projects/`: contém o arquivo Projetos.jsx utilizado para armazenar informações dos projetos como se fosse um JSON.
-- `src/assets`: arquivo de importação de imagens.
-- `src/App.js`: arquivo principal do projeto.
-- `src/App.css`: arquivo CSS principal do projeto.
-- `src/index.css`: arquivo CSS global do projeto.
-- `index.html`: arquivo HTML principal do projeto.
-
-
 ## Licença
 
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
